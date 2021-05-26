@@ -1,0 +1,23 @@
+{
+  "name": "coffeeroasters-subscription-site",
+  "version": "1.0.0",
+  "description": "![Design preview for the Coffeeroasters subscription site coding challenge](./preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jesse10930/coffeeroasters-subscription.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jesse10930/coffeeroasters-subscription/issues"
+  },
+  "homepage": "https://github.com/jesse10930/coffeeroasters-subscription#readme",
+  "dependencies": {
+    "node-sass": "^6.0.0"
+  }
+}

@@ -1,0 +1,55 @@
+// General
+.container {
+  max-width: $website-width;
+  padding: 0 1.5rem;
+  margin: auto;
+  // overflow: hidden;
+}
+
+// Footer
+.footer-container {
+  max-width: $website-width;
+  padding: 0 3.5rem;
+  margin: auto;
+  // overflow: hidden;
+}
+
+// Main Button
+.mn-btn {
+  height: 55px;
+  width: 215px;
+  border-radius: 6px;
+  background: $cyan;
+  align-items: center;
+  text-align: center;
+  border: none;
+  color: $cream;
+  font-family: $fraunces;
+  font-size: 18px;
+
+  &:hover {
+    cursor: pointer;
+    background: $lt-cyan;
+  }
+}
+
+.disabled {
+  background: $dk-cream;
+}
+
+// Big Selection Button
+// .bg-sel-btn {
+//   height: 250px;
+//   width: 225px;
+//   border-radius: 8px;
+//   background: $lt-cream;
+//   padding: 32px;
+
+//   &:hover {
+//     background: $orange;
+//   }
+// }
+
+// .active {
+//   background: $cyan;
+// }

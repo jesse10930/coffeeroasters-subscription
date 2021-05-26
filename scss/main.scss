@@ -1,0 +1,74 @@
+@import 'config';
+@import 'utilities';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: $cream;
+  font-family: $barlow;
+}
+
+a {
+  text-decoration: none;
+  color: $grey;
+
+  &:hover {
+    color: $grey-blue;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+// Header
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  ul {
+    display: flex;
+  }
+
+  li {
+    padding: 2rem 0 2rem 1.5rem;
+  }
+}
+
+// Footer {
+footer {
+  background: $dark;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  #footer-left {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    ul {
+      display: flex;
+      padding-left: 5rem;
+    }
+
+    li {
+      padding: 2rem 0 2rem 1.5rem;
+
+      a:hover {
+        color: #ffffff;
+      }
+    }
+  }
+
+  #footer-right {
+    width: 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

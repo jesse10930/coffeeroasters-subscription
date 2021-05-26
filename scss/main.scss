@@ -39,7 +39,79 @@ header {
   }
 }
 
-// Footer {
+// Home
+#home-a {
+  background-image: url(/dist/images/home/desktop/image-hero-coffeepress.jpg);
+  height: 600px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 60px;
+
+  #home-a-content {
+    width: 40%;
+    margin-left: 6rem;
+
+    h1 {
+      padding-bottom: 40px;
+    }
+
+    p {
+      padding-bottom: 40px;
+    }
+  }
+}
+
+#home-b {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 60px;
+  align-items: center;
+
+  #our-coll-container {
+    // mix-blend-mode: normal;
+    position: absolute;
+    opacity: 0.5;
+
+    h1 {
+      // padding-top: 40px;
+      font-family: $fraunces;
+      font-size: 150px;
+      line-height: 120px;
+      // background: #83888f;
+      // background: -webkit-linear-gradient(to bottom, #83888f 0%, #fefcf7 100%);
+      // background: -moz-linear-gradient(to bottom, #83888f 0%, #fefcf7 100%);
+      background: linear-gradient(to bottom, $grey-blue 0%, $cream 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  #home-b-content {
+    z-index: 1;
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+
+    img {
+      width: 80%;
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    p {
+      text-align: center;
+      color: $grey-blue;
+    }
+  }
+}
+
+// Footer
 footer {
   background: $dark;
   display: flex;

@@ -26,6 +26,31 @@
 .disabled {
   background: #e2dedb; }
 
+.big-title {
+  color: #ffffff;
+  font-family: "Fraunces", serif;
+  font-size: 72px;
+  line-height: 72px; }
+
+.small-title {
+  color: #333d4b;
+  font-family: "Fraunces", serif;
+  font-size: 24px;
+  line-height: 32px; }
+
+.paragraph {
+  color: #fefcf7;
+  font-family: "Barlow", sans-serif;
+  font-size: 16px;
+  line-height: 26px; }
+
+.coff-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 20px;
+  margin-right: 20px; }
+
 * {
   margin: 0;
   padding: 0; }
@@ -51,6 +76,52 @@ header {
     display: flex; }
   header li {
     padding: 2rem 0 2rem 1.5rem; }
+
+#home-a {
+  background-image: url(/dist/images/home/desktop/image-hero-coffeepress.jpg);
+  height: 600px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 60px; }
+  #home-a #home-a-content {
+    width: 40%;
+    margin-left: 6rem; }
+    #home-a #home-a-content h1 {
+      padding-bottom: 40px; }
+    #home-a #home-a-content p {
+      padding-bottom: 40px; }
+
+#home-b {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 60px;
+  align-items: center; }
+  #home-b #our-coll-container {
+    position: absolute;
+    opacity: 0.5; }
+    #home-b #our-coll-container h1 {
+      font-family: "Fraunces", serif;
+      font-size: 150px;
+      line-height: 120px;
+      background: linear-gradient(to bottom, #333d4b 0%, #fefcf7 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
+  #home-b #home-b-content {
+    z-index: 1;
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between; }
+    #home-b #home-b-content img {
+      width: 80%;
+      margin-bottom: 30px; }
+    #home-b #home-b-content h2 {
+      margin-bottom: 20px; }
+    #home-b #home-b-content p {
+      text-align: center;
+      color: #333d4b; }
 
 footer {
   background: #2c343e;

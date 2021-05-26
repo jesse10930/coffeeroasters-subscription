@@ -37,6 +37,28 @@
   background: $dk-cream;
 }
 
+// Text
+.big-title {
+  color: #ffffff;
+  font-family: $fraunces;
+  font-size: 72px;
+  line-height: 72px;
+}
+
+.small-title {
+  color: $grey-blue;
+  font-family: $fraunces;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.paragraph {
+  color: $cream;
+  font-family: $barlow;
+  font-size: 16px;
+  line-height: 26px;
+}
+
 // Big Selection Button
 // .bg-sel-btn {
 //   height: 250px;
@@ -53,3 +75,12 @@
 // .active {
 //   background: $cyan;
 // }
+
+// Alignment
+.coff-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 20px;
+  margin-right: 20px;
+}

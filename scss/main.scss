@@ -46,7 +46,7 @@ header {
   border-radius: 10px;
   display: flex;
   align-items: center;
-  margin-bottom: 60px;
+  margin-bottom: 135px;
 
   #home-a-content {
     width: 40%;
@@ -67,20 +67,17 @@ header {
   margin: auto;
   display: flex;
   flex-direction: column;
-  margin-bottom: 60px;
+  margin-bottom: 200px;
   align-items: center;
 
   #our-coll-container {
-    // mix-blend-mode: normal;
     position: absolute;
     opacity: 0.5;
 
     h1 {
-      // padding-top: 40px;
       font-family: $fraunces;
       font-size: 150px;
       line-height: 120px;
-      // background: #83888f;
       // background: -webkit-linear-gradient(to bottom, #83888f 0%, #fefcf7 100%);
       // background: -moz-linear-gradient(to bottom, #83888f 0%, #fefcf7 100%);
       background: linear-gradient(to bottom, $grey-blue 0%, $cream 100%);
@@ -109,6 +106,103 @@ header {
       color: $grey-blue;
     }
   }
+}
+
+#home-c {
+  height: 700px;
+  margin-bottom: 175px;
+
+  #home-c-bg {
+    position: absolute;
+    height: 575px;
+    width: 100%;
+    max-width: $website-width;
+    background: $dark;
+    border-radius: 10px;
+    z-index: -1;
+  }
+
+  #home-c-title {
+    height: 50%;
+    width: 40%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+      color: $cream;
+      margin-bottom: 20px;
+    }
+
+    p {
+      text-align: center;
+    }
+  }
+
+  #home-c-cards {
+    display: flex;
+    width: 95%;
+    margin: auto;
+    justify-content: space-evenly;
+
+    img {
+      padding: 20px;
+    }
+
+    h3 {
+      color: $cream;
+    }
+
+    p {
+      text-align: center;
+      width: 80%;
+    }
+  }
+}
+
+#home-d {
+  width: 88%;
+  margin: auto;
+  margin-bottom: 100px;
+
+  h3 {
+    color: $grey;
+    margin-bottom: 100px;
+  }
+
+  #circle-line {
+    position: relative;
+    border-bottom: 2px solid $orange;
+    width: 67%;
+    margin-bottom: 100px;
+  }
+
+  #steps {
+    display: flex;
+    justify-content: flex-start;
+    h1 {
+      color: $orange;
+      margin-bottom: 40px;
+    }
+
+    h3 {
+      color: $grey-blue;
+      width: 70%;
+      margin-bottom: 40px;
+    }
+
+    p {
+      color: $grey-blue;
+    }
+  }
+}
+
+#home-e {
+  width: 89%;
+  margin: auto;
+  margin-bottom: 200px;
 }
 
 // Footer

@@ -3,10 +3,19 @@
   padding: 0 1.5rem;
   margin: auto; }
 
+.current {
+  padding-bottom: 5px;
+  border-bottom: solid 2px #0e8784; }
+
 .footer-container {
   max-width: 1280px;
   padding: 0 3.5rem;
   margin: auto; }
+
+i {
+  color: #ffffff; }
+  i:hover {
+    color: #fdd6ba; }
 
 .mn-btn {
   height: 55px;
@@ -94,6 +103,9 @@
 
 .circ-3 {
   left: 100%; }
+
+.plan-circ {
+  background: #2c343e; }
 
 * {
   margin: 0;
@@ -314,6 +326,45 @@ header {
     #about-d #about-d-locations p {
       color: #333d4b; }
 
+#plan-a {
+  background-image: url(/dist/images/plan/desktop/image-hero-blackcup.jpg);
+  height: 450px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 175px; }
+  #plan-a #plan-a-content {
+    width: 40%;
+    margin-left: 6rem; }
+    #plan-a #plan-a-content h1 {
+      padding-bottom: 40px; }
+    #plan-a #plan-a-content p {
+      padding-bottom: 40px; }
+
+#plan-b {
+  margin: auto;
+  padding: 100px;
+  margin-bottom: 100px;
+  background: #2c343e;
+  border-radius: 8px; }
+  #plan-b #plan-circle-line {
+    position: relative;
+    border-bottom: 2px solid #fdd6ba;
+    width: 67%;
+    margin-bottom: 100px; }
+  #plan-b #plan-steps {
+    display: flex;
+    justify-content: flex-start; }
+    #plan-b #plan-steps h1 {
+      color: #fdd6ba;
+      margin-bottom: 40px; }
+    #plan-b #plan-steps h3 {
+      color: #fefcf7;
+      width: 70%;
+      margin-bottom: 40px; }
+    #plan-b #plan-steps p {
+      color: #fefcf7; }
+
 footer {
   background: #2c343e;
   display: flex;
@@ -331,7 +382,10 @@ footer {
       footer #footer-left li a:hover {
         color: #ffffff; }
   footer #footer-right {
-    width: 10rem;
+    width: 12rem;
     display: flex;
     justify-content: space-between;
     align-items: center; }
+    footer #footer-right img {
+      height: 30px;
+      width: 30px; }

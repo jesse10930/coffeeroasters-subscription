@@ -320,6 +320,63 @@ header {
   }
 }
 
+// Plan
+#plan-a {
+  background-image: url(/dist/images/plan/desktop/image-hero-blackcup.jpg);
+  height: 450px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 175px;
+
+  #plan-a-content {
+    width: 40%;
+    margin-left: 6rem;
+
+    h1 {
+      padding-bottom: 40px;
+    }
+
+    p {
+      padding-bottom: 40px;
+    }
+  }
+}
+
+#plan-b {
+  margin: auto;
+  padding: 100px;
+  margin-bottom: 100px;
+  background: $dark;
+  border-radius: 8px;
+
+  #plan-circle-line {
+    position: relative;
+    border-bottom: 2px solid $orange;
+    width: 67%;
+    margin-bottom: 100px;
+  }
+
+  #plan-steps {
+    display: flex;
+    justify-content: flex-start;
+    h1 {
+      color: $orange;
+      margin-bottom: 40px;
+    }
+
+    h3 {
+      color: $cream;
+      width: 70%;
+      margin-bottom: 40px;
+    }
+
+    p {
+      color: $cream;
+    }
+  }
+}
+
 // Footer
 footer {
   background: $dark;
@@ -347,9 +404,14 @@ footer {
   }
 
   #footer-right {
-    width: 10rem;
+    width: 12rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    img {
+      height: 30px;
+      width: 30px;
+    }
   }
 }

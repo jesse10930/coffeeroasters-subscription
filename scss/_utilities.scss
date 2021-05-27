@@ -5,11 +5,25 @@
   margin: auto;
 }
 
+// Header
+.current {
+  padding-bottom: 5px;
+  border-bottom: solid 2px $cyan;
+}
+
 // Footer
 .footer-container {
   max-width: $website-width;
   padding: 0 3.5rem;
   margin: auto;
+}
+
+i {
+  color: #ffffff;
+
+  &:hover {
+    color: $orange;
+  }
 }
 
 // Main Button
@@ -133,4 +147,8 @@
 
 .circ-3 {
   left: 100%;
+}
+
+.plan-circ {
+  background: $dark;
 }

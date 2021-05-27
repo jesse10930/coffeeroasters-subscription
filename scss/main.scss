@@ -205,6 +205,121 @@ header {
   margin-bottom: 200px;
 }
 
+// About
+#about-a {
+  background-image: url(/dist/images/about/desktop/image-hero-whitecup.jpg);
+  height: 450px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 175px;
+
+  #about-a-content {
+    width: 40%;
+    margin-left: 6rem;
+
+    h1 {
+      padding-bottom: 40px;
+    }
+
+    p {
+      padding-bottom: 40px;
+    }
+  }
+}
+
+#about-b {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 175px;
+
+  #about-b-pic {
+    background-image: url(/dist/images/about/desktop/image-commitment.jpg);
+    height: 520px;
+    width: 445px;
+    border-radius: 10px;
+  }
+
+  #about-b-text {
+    width: 50%;
+
+    h2 {
+      color: $grey-blue;
+      margin-bottom: 40px;
+    }
+
+    p {
+      color: $grey-blue;
+    }
+  }
+}
+
+#about-c {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 175px;
+  height: 575px;
+
+  #about-c-bg {
+    position: absolute;
+    height: 475px;
+    width: 100%;
+    max-width: $website-width;
+    background: $dark;
+    border-radius: 10px;
+    z-index: -1;
+    top: 100px;
+  }
+
+  #about-c-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 42%;
+
+    h2 {
+      margin-bottom: 20px;
+    }
+  }
+
+  #about-c-pic {
+    background-image: url(/dist/images/about/desktop/image-quality.jpg);
+    height: 474px;
+    width: 445px;
+    border-radius: 10px;
+  }
+}
+
+#about-d {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 175px;
+
+  h3 {
+    color: $grey;
+    margin-bottom: 75px;
+  }
+
+  #about-d-locations {
+    display: flex;
+    margin: auto;
+
+    h3 {
+      color: $grey-blue;
+      margin-bottom: 0;
+    }
+
+    p {
+      color: $grey-blue;
+    }
+  }
+}
+
 // Footer
 footer {
   background: $dark;

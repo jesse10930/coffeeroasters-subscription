@@ -106,6 +106,16 @@
   margin-right: 6rem;
 }
 
+.location {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 265px;
+  width: 30%;
+  margin-right: 50px;
+}
+
 // Circles
 .circle {
   position: absolute;

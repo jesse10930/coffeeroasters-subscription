@@ -107,6 +107,62 @@ i {
 .plan-circ {
   background: #2c343e; }
 
+.dropdown-title {
+  width: 100%;
+  border: none;
+  background: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 25px 0; }
+  .dropdown-title:hover {
+    cursor: pointer; }
+
+.plan-c-options {
+  display: flex;
+  justify-content: space-between;
+  width: 100%; }
+
+.option-card {
+  width: 250px;
+  height: 250px;
+  background: #f4f1eb;
+  border-radius: 8px;
+  flex-direction: column;
+  text-align: left;
+  padding: 30px;
+  border: none; }
+  .option-card:hover {
+    background: #fdd6ba;
+    cursor: pointer; }
+
+.active {
+  background: #0e8784; }
+  .active:hover {
+    background: #0e8784; }
+
+.hide {
+  display: none; }
+
+.li-num {
+  margin-right: 10px;
+  color: #83888f;
+  font-family: "Fraunces", serif;
+  font-size: 24px;
+  line-height: 32px; }
+
+.li-title {
+  color: #83888f;
+  font-family: "Fraunces", serif;
+  font-size: 24px;
+  line-height: 32px; }
+
+.open .li-num {
+  color: #0e8784; }
+
+.open .li-title {
+  color: #333d4b; }
+
 * {
   margin: 0;
   padding: 0; }
@@ -364,6 +420,45 @@ header {
       margin-bottom: 40px; }
     #plan-b #plan-steps p {
       color: #fefcf7; }
+
+#plan-c {
+  display: flex;
+  width: 90%;
+  margin: auto; }
+  #plan-c #plan-c-side-bar {
+    width: 350px;
+    margin-right: 125px; }
+    #plan-c #plan-c-side-bar li {
+      padding-bottom: 10px;
+      border-bottom: 1px solid #83888f;
+      margin-bottom: 10px; }
+    #plan-c #plan-c-side-bar :last-child {
+      border-bottom: none; }
+  #plan-c #plan-c-main h1 {
+    color: #83888f; }
+  #plan-c #plan-c-main h3 {
+    color: #333d4b;
+    margin-bottom: 20px; }
+  #plan-c #plan-c-main p {
+    color: #333d4b; }
+  #plan-c #plan-c-main #plan-c-summary {
+    width: 100%;
+    background: #333d4b;
+    margin-top: 125px;
+    border-radius: 8px;
+    padding: 30px 0;
+    margin-bottom: 50px; }
+    #plan-c #plan-c-main #plan-c-summary p {
+      color: #83888f;
+      margin: 0 0 20px 40px; }
+    #plan-c #plan-c-main #plan-c-summary h3 {
+      color: #ffffff;
+      margin: 0 40px 0 40px; }
+    #plan-c #plan-c-main #plan-c-summary span {
+      color: #0e8784; }
+  #plan-c #plan-c-main #create-plan-btn {
+    float: right;
+    margin-bottom: 175px; }
 
 footer {
   background: #2c343e;

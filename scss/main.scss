@@ -377,6 +377,66 @@ header {
   }
 }
 
+#plan-c {
+  display: flex;
+  width: 90%;
+  margin: auto;
+
+  #plan-c-side-bar {
+    width: 350px;
+    margin-right: 125px;
+    li {
+      padding-bottom: 10px;
+      border-bottom: 1px solid $grey;
+      margin-bottom: 10px;
+    }
+    :last-child {
+      border-bottom: none;
+    }
+  }
+
+  #plan-c-main {
+    h1 {
+      color: $grey;
+    }
+    h3 {
+      color: $grey-blue;
+      margin-bottom: 20px;
+    }
+    p {
+      color: $grey-blue;
+    }
+
+    #plan-c-summary {
+      width: 100%;
+      background: $grey-blue;
+      margin-top: 125px;
+      border-radius: 8px;
+      padding: 30px 0;
+      margin-bottom: 50px;
+
+      p {
+        color: $grey;
+        margin: 0 0 20px 40px;
+      }
+
+      h3 {
+        color: #ffffff;
+        margin: 0 40px 0 40px;
+      }
+
+      span {
+        color: $cyan;
+      }
+    }
+
+    #create-plan-btn {
+      float: right;
+      margin-bottom: 175px;
+    }
+  }
+}
+
 // Footer
 footer {
   background: $dark;

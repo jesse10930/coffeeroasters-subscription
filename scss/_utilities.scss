@@ -49,23 +49,6 @@ i {
   background: $dk-cream;
 }
 
-// Big Selection Button
-// .bg-sel-btn {
-//   height: 250px;
-//   width: 225px;
-//   border-radius: 8px;
-//   background: $lt-cream;
-//   padding: 32px;
-
-//   &:hover {
-//     background: $orange;
-//   }
-// }
-
-// .active {
-//   background: $cyan;
-// }
-
 // Text
 .big-title {
   color: #ffffff;
@@ -151,4 +134,79 @@ i {
 
 .plan-circ {
   background: $dark;
+}
+
+// Plan Dropdown
+.dropdown-title {
+  width: 100%;
+  border: none;
+  background: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 25px 0;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.plan-c-options {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.option-card {
+  width: 250px;
+  height: 250px;
+  background: $lt-cream;
+  border-radius: 8px;
+  flex-direction: column;
+  text-align: left;
+  padding: 30px;
+  border: none;
+
+  &:hover {
+    background: $orange;
+    cursor: pointer;
+  }
+}
+
+.active {
+  background: $cyan;
+
+  &:hover {
+    background: $cyan;
+  }
+}
+
+.hide {
+  display: none;
+}
+
+// Plan Side Bar
+.li-num {
+  margin-right: 10px;
+  color: $grey;
+  font-family: $fraunces;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.li-title {
+  color: $grey;
+  font-family: $fraunces;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.open {
+  .li-num {
+    color: $cyan;
+  }
+
+  .li-title {
+    color: $grey-blue;
+  }
 }

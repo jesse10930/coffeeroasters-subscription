@@ -34,6 +34,9 @@ i {
 
 .disabled {
   background: #e2dedb; }
+  .disabled:hover {
+    background: #e2dedb;
+    cursor: not-allowed; }
 
 .big-title {
   color: #ffffff;
@@ -165,6 +168,66 @@ i {
 
 .open .li-title {
   color: #333d4b; }
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.4); }
+
+.modal-content {
+  background: #fefcf7;
+  margin: 5% auto;
+  width: 40%;
+  text-align: center;
+  border-radius: 8px; }
+
+.modal-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #333d4b;
+  height: 135px;
+  width: 100%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px; }
+
+.modal-quote {
+  padding: 30px;
+  padding-bottom: 0;
+  color: #83888f;
+  font-family: "Fraunces", serif;
+  font-size: 26px;
+  line-height: 46px; }
+
+.cyan {
+  color: #0e8784; }
+
+.modal-paragraph {
+  padding: 30px;
+  color: #83888f;
+  font-family: "Barlow", sans-serif;
+  font-size: 16px;
+  line-height: 26px; }
+
+.modal-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px; }
+
+.modal-price {
+  margin-right: 10px;
+  font-family: "Fraunces", serif;
+  font-size: 32px;
+  line-height: 36px;
+  color: #2c343e; }
 
 * {
   margin: 0;
@@ -445,7 +508,7 @@ header {
   #plan-c #plan-c-main p {
     color: #333d4b; }
   #plan-c #plan-c-main #plan-c-summary {
-    width: 100%;
+    width: 750px;
     background: #333d4b;
     margin-top: 125px;
     border-radius: 8px;

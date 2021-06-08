@@ -107,6 +107,7 @@
           <button class="dropdown-title" value="prefs">
             <h1 class="med-title">How do you drink your coffee?</h1>
             <img src="images/plan/desktop/icon-arrow.svg" alt="arrow">
+            <!-- <img src="images/plan/desktop/icon-arrow-up.svg" alt="arrow"> -->
           </button>
           <div id="options-prefs" class="plan-c-options">
             <button class="option-card" value="capsule">
@@ -208,7 +209,7 @@
       </div>
       <div id="plan-c-summary">
         <p class="paragraph"> ORDER SUMMARY</p>
-        <h3 class="small-title">“I drink coffee 
+        <h3 id="activate-plan" class="small-title">“I drink coffee 
           <span id='using' style="color: #ffffff"></span>
           <span id="pref">_____</span>, with a 
           <span id="type">_____</span> type of bean. 
@@ -217,23 +218,37 @@
           <span id="grind">_____</span>, sent to me 
           <span id="freq">_____</span>.”</h3>
       </div>
-      <button id="create-plan-btn" class="mn-btn disabled">
+      <button id="create-plan-btn" class="mn-btn disabled" disabled="true">
         Create my plan!
       </button>
     </div>
 
     <!-- Modal -->
-    <!-- Order Summary
-
-    “I drink coffee _____, with a _____ type of bean. _____ ground ala _____,
-    sent to me _____.”
-
-    Is this correct? You can proceed to checkout or go back to plan selection if something 
-    is off. Subscription discount codes can also be redeemed at the checkout.
-
-    $_____/month
-
-    Checkout -->
+    <div id="my-modal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="med-title">Order Summary</h1>
+        </div>
+        <h3 class="modal-quote">“I drink coffee 
+          <span id='modal-using'></span>
+          <span id="modal-pref" class='cyan'>_____</span>, with a 
+          <span id="modal-type" class='cyan'>_____</span> type of bean. 
+          <span id="modal-quant" class='cyan'>_____</span> 
+          <span id="modal-groundAla">ground ala </span>
+          <span id="modal-grind" class='cyan'>_____</span>, sent to me 
+          <span id="modal-freq" class='cyan'>_____</span>.”
+        </h3>
+        <p class="modal-paragraph">
+          Is this correct? You can proceed to checkout or go back to plan selection if something is off. Subscription discount codes can also be redeemed at the checkout.
+        </p>
+        <div class="modal-footer">
+          <h1 id="modal-cost" class="modal-price">$_____/mo</h1>
+          <button id='checkout-btn' class="mn-btn">
+            Checkout
+          </button>
+        </div>
+      </div>
+    </div>
     <!-- End modal -->
   </section>
 

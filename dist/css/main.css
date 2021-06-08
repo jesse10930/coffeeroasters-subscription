@@ -122,16 +122,19 @@ i {
   display: flex;
   justify-content: space-between;
   width: 100%; }
+  .plan-c-options :last-child {
+    margin-right: 0px; }
 
 .option-card {
-  width: 250px;
+  max-width: 250px;
   height: 250px;
   background: #f4f1eb;
   border-radius: 8px;
   flex-direction: column;
   text-align: left;
   padding: 30px;
-  border: none; }
+  border: none;
+  margin-right: 5px; }
   .option-card:hover {
     background: #fdd6ba;
     cursor: pointer; }

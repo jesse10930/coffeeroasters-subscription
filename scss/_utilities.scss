@@ -155,10 +155,14 @@ i {
   display: flex;
   justify-content: space-between;
   width: 100%;
+
+  :last-child {
+    margin-right: 0px;
+  }
 }
 
 .option-card {
-  width: 250px;
+  max-width: 250px;
   height: 250px;
   background: $lt-cream;
   border-radius: 8px;
@@ -166,6 +170,7 @@ i {
   text-align: left;
   padding: 30px;
   border: none;
+  margin-right: 5px;
 
   &:hover {
     background: $orange;

@@ -1,0 +1,244 @@
+// Smart Phones
+@media (max-width: 500px) {
+}
+
+// Tablets
+@media (max-width: 900px) {
+  .left {
+    grid-area: left;
+  }
+
+  .top-right {
+    grid-area: top-right;
+    align-self: center;
+  }
+
+  .bot-right {
+    grid-area: bot-right;
+  }
+
+  .coff-container {
+    display: grid;
+    align-items: start;
+    grid-template-columns: 60%;
+    grid-template-areas:
+      'left top-right'
+      'left bot-right';
+  }
+
+  .card {
+    width: 575px;
+    height: 180px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
+
+  .step {
+    width: 100%;
+    margin-right: 2rem;
+  }
+
+  .footer-container {
+    padding: 3.5rem;
+  }
+
+  .modal-content {
+    margin: 30% auto;
+    width: 80%;
+  }
+
+  .modal-footer {
+    padding-bottom: 50px;
+  }
+
+  header {
+    margin-bottom: 30px;
+  }
+
+  #home-a {
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+
+    #home-a-content {
+      width: 60%;
+      margin-left: 4rem;
+
+      h1 {
+        font-size: 48px;
+        line-height: 48px;
+      }
+    }
+  }
+
+  #home-b {
+    margin-bottom: 135px;
+
+    #our-coll-container {
+      h1 {
+        font-size: 100px;
+        line-height: 80px;
+      }
+    }
+
+    #home-b-content {
+      margin-top: 50px;
+      flex-direction: column;
+
+      p {
+        text-align: left;
+      }
+    }
+  }
+
+  #home-c {
+    margin-bottom: 300px;
+
+    #home-c-bg {
+      width: 94%;
+    }
+
+    #home-c-title {
+      width: 80%;
+      height: 37%;
+    }
+
+    #home-c-cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  #home-d {
+    h3 {
+      margin-bottom: 50px;
+    }
+
+    #steps {
+      h3 {
+        width: 100%;
+      }
+    }
+  }
+
+  #home-e {
+    margin-bottom: 140px;
+  }
+
+  #about-a {
+    background-position: center top;
+    height: 400px;
+    margin-bottom: 100px;
+
+    h1 {
+      font-size: 32px;
+      line-height: 40px;
+    }
+  }
+
+  #about-b {
+    #about-b-pic {
+      width: 280px;
+      height: 470px;
+    }
+
+    #about-b-text {
+      width: 52%;
+      h2 {
+        font-size: 36px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  #about-c {
+    #about-c-bg {
+      height: 488px;
+      width: 688px;
+      top: 170px;
+    }
+
+    #about-c-text {
+      justify-content: flex-end;
+      align-items: center;
+      width: 80%;
+
+      h2 {
+        font-size: 32px;
+        line-height: 48px;
+      }
+
+      p {
+        text-align: center;
+      }
+    }
+
+    #about-c-pic {
+      background-size: cover;
+      background-position-y: bottom;
+      position: absolute;
+      height: 320px;
+      width: 575px;
+    }
+  }
+
+  #plan-a {
+    background-position: 30%;
+    margin-bottom: 140px;
+
+    #plan-a-content {
+      width: 45%;
+      margin-left: 4rem;
+    }
+
+    h1 {
+      font-size: 48px;
+      line-height: 48px;
+    }
+  }
+
+  #plan-b {
+    width: 98%;
+    padding: 100px 30px 100px 30px;
+    margin-left: -1.5rem;
+
+    #plan-steps {
+      h3 {
+        width: 80%;
+      }
+    }
+  }
+
+  #plan-c {
+    display: inline;
+    width: 100%;
+
+    #plan-c-side-bar {
+      display: none;
+    }
+
+    #plan-c-main {
+      #plan-c-summary {
+        width: 100%;
+      }
+
+      #create-plan-btn {
+        float: none;
+        margin-bottom: 100px;
+        margin-left: 35%;
+      }
+    }
+  }
+
+  footer {
+    flex-direction: column;
+
+    #footer-left {
+      flex-direction: column;
+
+      ul {
+        padding-left: 0;
+      }
+    }
+  }
+}

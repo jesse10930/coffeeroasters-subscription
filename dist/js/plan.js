@@ -155,6 +155,7 @@ for (let j = 0; j < options.length; j++) {
 let modal = document.getElementById('my-modal');
 let createPlanBtn = document.getElementById('create-plan-btn');
 let checkoutBtn = document.getElementById('checkout-btn');
+let mobileCheckoutBtn = document.getElementById('mobile-checkout-btn');
 
 createPlanBtn.onclick = () => {
   let quantity = document.getElementById('quant').innerHTML;
@@ -201,10 +202,16 @@ createPlanBtn.onclick = () => {
 
   document.getElementById('modal-cost').innerHTML =
     '$' + cost.toFixed(2) + '/mo';
+  document.getElementById('mobile-modal-cost').innerHTML =
+    'Checkout - $' + cost.toFixed(2) + '/mo';
   modal.style.display = 'block';
 };
 
 checkoutBtn.onclick = () => {
+  modal.style.display = 'none';
+};
+
+mobileCheckoutBtn.onclick = () => {
   modal.style.display = 'none';
 };
 

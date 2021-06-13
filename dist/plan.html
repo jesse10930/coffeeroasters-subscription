@@ -31,6 +31,24 @@
         <li><a href="plan.html" class="current">CREATE YOUR PLAN</a></li>
       </ul>
     </nav>
+    <nav id="hamburger-menu" class="hamburger-menu">
+      <div id="three-lines" class="three-lines">
+        <div class="hamburger-line"></div>
+        <div class="hamburger-line"></div>
+        <div class="hamburger-line"></div>
+      </div>
+      <div id="close-btn" class="close-btn">
+      </div>
+      <div id="my-hamburger-modal" class="hamburger-modal">
+        <div class="hamburger-modal-content">
+          <ul class="hamburger-list">
+            <li class="hamburger-item"><a href="index.html" class="hamburger-link">Home</a></li>
+            <li class="hamburger-item"><a href="about.html" class='hamburger-link'>About Us</a></li>
+            <li class="hamburger-item"><a href="plan.html" class='hamburger-link current'>Create Your Plan</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   </header>
 
   <section id="plan-a">
@@ -247,6 +265,11 @@
             Checkout
           </button>
         </div>
+        <div class="mobile-modal-footer">
+          <button id="mobile-checkout-btn" class="mobile-btn">
+            <h2 id="mobile-modal-cost" class ="mobile-modal-price"></h2> 
+          </button>
+        </div>
       </div>
     </div>
     <!-- End modal -->
@@ -279,28 +302,12 @@
       <a href="https://www.frontendmentor.io/profile/jesse10930" target="_blank">
         <i class="fab fas fa-code fa-2x"></i>
       </a>
-      <!-- <a href="//www.facebook.com" target="_blank">
-        <img
-          src="images/shared/desktop/icon-facebook.svg"
-          alt="facebook"
-        />
-      </a>
-      <a href="//www.instagram.com" target="_blank">
-        <img
-          src="images/shared/desktop/icon-instagram.svg"
-          alt="instagram"
-        />
-      </a>
-      <a href="//www.twitter.com" target="_blank">
-        <img
-          src="images/shared/desktop/icon-twitter.svg"
-          alt="twitter"
-        />
-      </a> -->
     </div>
   </footer>
 
+  <!-- JavaScript -->
   <script src="js/plan.js"></script>
+  <script src="js/hamburger.js"></script>
 </body>
 
 </html>

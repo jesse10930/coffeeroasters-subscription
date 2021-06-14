@@ -475,30 +475,6 @@ footer {
       width: 30px;
     }
   }
-
-  #foot-right {
-    width: 12rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    #heynow {
-      height: 30px;
-      width: 30px;
-    }
-  }
-
-  #foot-left {
-    width: 12rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    #heylater {
-      height: 30px;
-      width: 30px;
-    }
-  }
 }
 
 @import 'mobile';

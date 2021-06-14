@@ -19,6 +19,7 @@
 </head>
 
 <body class="container">
+  <!-- Header -->
   <header>
     <img
       src="images/shared/desktop/logo.svg"
@@ -51,6 +52,7 @@
     </nav>
   </header>
 
+  <!-- Plan A -->
   <section id="plan-a">
     <div id="plan-a-content">
       <h1 class="big-title">
@@ -63,6 +65,7 @@
     </div>
   </section>
 
+  <!-- Plan B -->
   <section id="plan-b">
     <div id="plan-circle-line">
       <div class="circle plan-circ"></div>
@@ -94,6 +97,7 @@
     </div>
   </section>
 
+  <!-- Plan C -->
   <section id="plan-c">
     <div id="plan-c-side-bar">
       <ul>
@@ -124,8 +128,7 @@
         <div class="dropdown-option">
           <button class="dropdown-title" value="prefs">
             <h1 class="med-title">How do you drink your coffee?</h1>
-            <img src="images/plan/desktop/icon-arrow.svg" alt="arrow">
-            <!-- <img src="images/plan/desktop/icon-arrow-up.svg" alt="arrow"> -->
+            <img id="arrow-prefs" class="spin" src="images/plan/desktop/icon-arrow.svg" alt="arrow">
           </button>
           <div id="options-prefs" class="plan-c-options">
             <button class="option-card" value="capsule">
@@ -145,7 +148,7 @@
         <div class="dropdown-option">
           <button class="dropdown-title" value="type">
             <h1 class="med-title">What type of coffee?</h1>
-            <img src="images/plan/desktop/icon-arrow.svg" alt="arrow">
+            <img id="arrow-type" src="images/plan/desktop/icon-arrow.svg" alt="arrow">
           </button>
           <div id="options-type" class="plan-c-options hide">
             <button class="option-card" value='single'>
@@ -165,7 +168,7 @@
         <div class="dropdown-option">
           <button class="dropdown-title" value="quant">
             <h1 class="med-title">How much would you like?</h1>
-            <img src="images/plan/desktop/icon-arrow.svg" alt="arrow">
+            <img id="arrow-quant" src="images/plan/desktop/icon-arrow.svg" alt="arrow">
           </button>
           <div id="options-quant" class="plan-c-options hide">
             <button class="option-card" value='250'>
@@ -187,7 +190,7 @@
           id="grindEmBtn"
           class="dropdown-title" value="grind">
             <h1 class="med-title">Want us to grind them?</h1>
-            <img src="images/plan/desktop/icon-arrow.svg" alt="arrow">
+            <img id="arrow-grind" src="images/plan/desktop/icon-arrow.svg" alt="arrow">
           </button>
           <div id="options-grind" class="plan-c-options hide">
             <button class="option-card" value='wholebean'>
@@ -207,7 +210,7 @@
         <div class="dropdown-option">
           <button class="dropdown-title" value="freq">
             <h1 class="med-title">How often should we deliver?</h1>
-            <img src="images/plan/desktop/icon-arrow.svg" alt="arrow">
+            <img id="arrow-freq" src="images/plan/desktop/icon-arrow.svg" alt="arrow">
           </button>
           <div id="options-freq" class="plan-c-options hide">
             <button class="option-card" value='weekly'>
@@ -275,6 +278,7 @@
     <!-- End modal -->
   </section>
 
+  <!-- Footer -->
   <footer class="footer-container">
     <div id="footer-left">
       <img

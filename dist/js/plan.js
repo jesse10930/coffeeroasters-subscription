@@ -1,31 +1,43 @@
 // Dropdown Click
-let dropdowns = document.getElementsByClassName('dropdown-title');
+const dropdowns = document.getElementsByClassName('dropdown-title');
 
 for (let i = 0; i < dropdowns.length; i++) {
+  // Add onclick to each dropdown
   dropdowns[i].onclick = (e) => {
-    let category = e.target.parentNode.value;
+    // Declare category to open/close dropdown
+    let category =
+      e.target.type === 'submit' ? e.target.value : e.target.parentNode.value;
 
-    let optionsDiv = document.getElementById('options-' + category);
-    let sideBarDiv = document.getElementById('li-' + category);
-
-    optionsDiv.classList.toggle('hide');
-    sideBarDiv.classList.toggle('open');
+    // Toggle options and side bar highlight
+    document.getElementById('options-' + category).classList.toggle('hide');
+    document.getElementById('li-' + category).classList.toggle('open');
+    document.getElementById('arrow-' + category).classList.toggle('spin');
   };
 }
 
 // Option Click
-let options = document.getElementsByClassName('option-card');
+const options = document.getElementsByClassName('option-card');
 
 for (let j = 0; j < options.length; j++) {
   let selection = options[j];
+  // Add onlick to each selection card
   selection.onclick = (e) => {
+    // Declaring variables
+    const grindEmBtn = document.getElementById('grindEmBtn');
+    const usingElem = document.getElementById('using');
+    const groundAlaElem = document.getElementById('groundAla');
+    const grindElem = document.getElementById('grind');
+    const modalUsingElem = document.getElementById('modal-using');
+    const modalGroundAlaElem = document.getElementById('modal-groundAla');
+    const modalGrindElem = document.getElementById('modal-grind');
+
     if (selection.value === 'capsule') {
       // Call handle active class function
       handleActive(selection, options, 1, 2);
 
       // Disable want us to grind them question
-      document.getElementById('grindEmBtn').disabled = true;
-      document.getElementById('grindEmBtn').style = 'cursor: not-allowed;';
+      grindEmBtn.disabled = true;
+      grindEmBtn.style = 'cursor: not-allowed;';
       document.getElementById('options-grind').classList.add('hide');
       document.getElementById('li-grind').classList.remove('open');
 
@@ -35,14 +47,14 @@ for (let j = 0; j < options.length; j++) {
       options[11].classList.remove('active');
 
       // Update summary
-      document.getElementById('using').innerHTML = 'using';
-      document.getElementById('groundAla').innerHTML = '';
-      document.getElementById('grind').innerHTML = '';
+      usingElem.innerHTML = 'using';
+      groundAlaElem.innerHTML = '';
+      grindElem.innerHTML = '';
 
       // Update Modal
-      document.getElementById('modal-using').innerHTML = 'using';
-      document.getElementById('modal-groundAla').innerHTML = '';
-      document.getElementById('modal-grind').innerHTML = '';
+      modalUsingElem.innerHTML = 'using';
+      modalGroundAlaElem.innerHTML = '';
+      modalGrindElem.innerHTML = '';
 
       // Call update text function
       changeText('pref', selection.value + 's');
@@ -52,21 +64,21 @@ for (let j = 0; j < options.length; j++) {
       handleActive(selection, options, 0, 2);
 
       // Enable want us to grind them question
-      document.getElementById('grindEmBtn').disabled = false;
-      document.getElementById('grindEmBtn').style = 'cursor: pointer;';
+      grindEmBtn.disabled = false;
+      grindEmBtn.style = 'cursor: pointer;';
 
       // Update summary
-      document.getElementById('using').innerHTML = 'as ';
-      document.getElementById('groundAla').innerHTML = 'ground ala ';
-      if (document.getElementById('grind').innerHTML === '') {
-        document.getElementById('grind').innerHTML = '____';
+      usingElem.innerHTML = 'as ';
+      groundAlaElem.innerHTML = 'ground ala ';
+      if (grindElem.innerHTML === '') {
+        grindElem.innerHTML = '____';
       }
 
-      // Updat modal
-      document.getElementById('modal-using').innerHTML = 'as ';
-      document.getElementById('modal-groundAla').innerHTML = 'ground ala ';
-      if (document.getElementById('modal-grind').innerHTML === '') {
-        document.getElementById('modal-grind').innerHTML = '____';
+      // Update modal
+      modalUsingElem.innerHTML = 'as ';
+      modalGroundAlaElem.innerHTML = 'ground ala ';
+      if (modalGrindElem.innerHTML === '') {
+        modalGrindElem.innerHTML = '____';
       }
 
       // Call update text function
@@ -77,21 +89,21 @@ for (let j = 0; j < options.length; j++) {
       handleActive(selection, options, 0, 1);
 
       // Enable want us to grind them question
-      document.getElementById('grindEmBtn').disabled = false;
-      document.getElementById('grindEmBtn').style = 'cursor: pointer;';
+      grindEmBtn.disabled = false;
+      grindEmBtn.style = 'cursor: pointer;';
 
       // Update summary
-      document.getElementById('using').innerHTML = 'as ';
-      document.getElementById('groundAla').innerHTML = 'ground ala ';
-      if (document.getElementById('grind').innerHTML === '') {
-        document.getElementById('grind').innerHTML = '____';
+      usingElem.innerHTML = 'as ';
+      groundAlaElem.innerHTML = 'ground ala ';
+      if (grindElem.innerHTML === '') {
+        grindElem.innerHTML = '____';
       }
 
       // Update modal
-      document.getElementById('modal-using').innerHTML = 'as ';
-      document.getElementById('modal-groundAla').innerHTML = 'ground ala ';
-      if (document.getElementById('modal-grind').innerHTML === '') {
-        document.getElementById('modal-grind').innerHTML = '____';
+      modalUsingElem.innerHTML = 'as ';
+      modalGroundAlaElem.innerHTML = 'ground ala ';
+      if (modalGrindElem.innerHTML === '') {
+        modalGrindElem.innerHTML = '____';
       }
 
       // Call update text function
@@ -152,16 +164,20 @@ for (let j = 0; j < options.length; j++) {
 }
 
 // Modal Open/Close
-let modal = document.getElementById('my-modal');
-let createPlanBtn = document.getElementById('create-plan-btn');
-let checkoutBtn = document.getElementById('checkout-btn');
-let mobileCheckoutBtn = document.getElementById('mobile-checkout-btn');
+const modal = document.getElementById('my-modal');
+const createPlanBtn = document.getElementById('create-plan-btn');
+const checkoutBtn = document.getElementById('checkout-btn');
+const mobileCheckoutBtn = document.getElementById('mobile-checkout-btn');
+const modalCost = document.getElementById('modal-cost');
+const mobileModalCost = document.getElementById('mobile-modal-cost');
 
 createPlanBtn.onclick = () => {
-  let quantity = document.getElementById('quant').innerHTML;
-  let frequency = document.getElementById('freq').innerHTML;
+  // Declaring Variables
+  const quantity = document.getElementById('quant').innerHTML;
+  const frequency = document.getElementById('freq').innerHTML;
   let cost = 0;
 
+  // Set cost based on user choices
   switch (quantity) {
     case '250g':
       switch (frequency) {
@@ -200,21 +216,23 @@ createPlanBtn.onclick = () => {
       }
   }
 
-  document.getElementById('modal-cost').innerHTML =
-    '$' + cost.toFixed(2) + '/mo';
-  document.getElementById('mobile-modal-cost').innerHTML =
-    'Checkout - $' + cost.toFixed(2) + '/mo';
+  // Set modal message, show modal
+  modalCost.innerHTML = '$' + cost.toFixed(2) + '/mo';
+  mobileModalCost.innerHTML = 'Checkout - $' + cost.toFixed(2) + '/mo';
   modal.style.display = 'block';
 };
 
+// Close modal
 checkoutBtn.onclick = () => {
   modal.style.display = 'none';
 };
 
+// Close Modal
 mobileCheckoutBtn.onclick = () => {
   modal.style.display = 'none';
 };
 
+// Close Modal
 window.onclick = (e) => {
   if (e.target == modal) {
     modal.style.display = 'none';
@@ -230,24 +248,26 @@ const handleActive = (element, elementArr, num1, num2) => {
 
 // Update summary
 const changeText = (element, newText) => {
+  // Declaring Variables
+  const prefText = document.getElementById('pref').innerHTML;
+  const typeText = document.getElementById('type').innerHTML;
+  const quantText = document.getElementById('quant').innerHTML;
+  const grindText = document.getElementById('grind').innerHTML;
+  const freqText = document.getElementById('freq').innerHTML;
+  let answers = prefText + typeText + quantText + grindText + freqText;
   let capNewText = newText[0].toUpperCase() + newText.slice(1);
+
+  // Capitalize and set words in summary
   document.getElementById(element).innerHTML = capNewText;
 
-  let prefText = document.getElementById('pref').innerHTML;
-  let typeText = document.getElementById('type').innerHTML;
-  let quantText = document.getElementById('quant').innerHTML;
-  let grindText = document.getElementById('grind').innerHTML;
-  let freqText = document.getElementById('freq').innerHTML;
-
-  let answers = prefText + typeText + quantText + grindText + freqText;
-
+  // Enable/disable create plan button
   if (!answers.includes('_')) {
-    document.getElementById('create-plan-btn').disabled = false;
-    document.getElementById('create-plan-btn').style = 'cursor: pointer;';
-    document.getElementById('create-plan-btn').classList.remove('disabled');
+    createPlanBtn.disabled = false;
+    createPlanBtn.style = 'cursor: pointer;';
+    createPlanBtn.classList.remove('disabled');
   } else {
-    document.getElementById('create-plan-btn').disabled = true;
-    document.getElementById('create-plan-btn').style = 'cursor: not-allowed;';
-    document.getElementById('create-plan-btn').classList.add('disabled');
+    createPlanBtn.disabled = true;
+    createPlanBtn.style = 'cursor: not-allowed;';
+    createPlanBtn.classList.add('disabled');
   }
 };

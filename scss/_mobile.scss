@@ -1,5 +1,6 @@
 // Tablets
 @media (max-width: 900px) {
+  // Classes
   .left {
     grid-area: left;
   }
@@ -47,6 +48,7 @@
     padding-bottom: 50px;
   }
 
+  // Main App
   header {
     margin-bottom: 30px;
   }
@@ -56,7 +58,7 @@
     background-position: center;
     height: 500px;
 
-    #home-a-content {
+    &-content {
       width: 60%;
       margin-left: 4rem;
 
@@ -77,7 +79,7 @@
       }
     }
 
-    #home-b-content {
+    &-content {
       margin-top: 50px;
       flex-direction: column;
 
@@ -90,16 +92,16 @@
   #home-c {
     margin-bottom: 300px;
 
-    #home-c-bg {
+    &-bg {
       width: 94%;
     }
 
-    #home-c-title {
+    &-title {
       width: 80%;
       height: 37%;
     }
 
-    #home-c-cards {
+    &-cards {
       flex-direction: column;
       align-items: center;
     }
@@ -133,12 +135,12 @@
   }
 
   #about-b {
-    #about-b-pic {
+    &-pic {
       width: 280px;
       height: 470px;
     }
 
-    #about-b-text {
+    &-text {
       width: 52%;
       h2 {
         font-size: 36px;
@@ -148,13 +150,13 @@
   }
 
   #about-c {
-    #about-c-bg {
+    &-bg {
       height: 488px;
       width: 688px;
       top: 170px;
     }
 
-    #about-c-text {
+    &-text {
       justify-content: flex-end;
       align-items: center;
       width: 80%;
@@ -169,7 +171,7 @@
       }
     }
 
-    #about-c-pic {
+    &-pic {
       background-size: cover;
       background-position-y: bottom;
       position: absolute;
@@ -182,7 +184,7 @@
     background-position: 30%;
     margin-bottom: 140px;
 
-    #plan-a-content {
+    &-content {
       width: 45%;
       margin-left: 4rem;
     }
@@ -209,11 +211,11 @@
     display: inline;
     width: 100%;
 
-    #plan-c-side-bar {
+    &-side-bar {
       display: none;
     }
 
-    #plan-c-main {
+    &-main {
       #plan-c-summary {
         width: 100%;
       }
@@ -241,6 +243,7 @@
 
 // Smart Phones
 @media (max-width: 500px) {
+  // Classes
   .coff-container {
     display: flex;
     align-items: center;
@@ -424,7 +427,7 @@
     text-align: center;
     margin-bottom: 80px;
 
-    #home-a-content {
+    &-content {
       width: 80%;
       margin-left: 2rem;
 
@@ -446,7 +449,7 @@
       }
     }
 
-    #home-b-content {
+    &-content {
       margin-top: 80px;
       flex-direction: column;
 
@@ -469,12 +472,12 @@
     height: 900px;
     margin-bottom: 700px;
 
-    #home-c-bg {
+    &-bg {
       width: 88%;
       height: 900px;
     }
 
-    #home-c-title {
+    &-title {
       height: 30%;
 
       h2 {
@@ -487,7 +490,7 @@
       }
     }
 
-    #home-c-cards {
+    &-cards {
       flex-direction: column;
       align-items: center;
     }
@@ -530,7 +533,7 @@
     text-align: center;
     margin-bottom: 80px;
 
-    #about-a-content {
+    &-content {
       width: 80%;
       margin-left: 2rem;
 
@@ -547,13 +550,13 @@
     flex-direction: column;
     margin-bottom: 120px;
 
-    #about-b-pic {
+    &-pic {
       width: 327px;
       height: 400px;
       margin-bottom: 40px;
     }
 
-    #about-b-text {
+    &-text {
       width: 100%;
       text-align: center;
 
@@ -565,13 +568,13 @@
 
   #about-c {
     margin-bottom: 120px;
-    #about-c-bg {
+    &-bg {
       height: 509px;
       width: 327px;
       top: 70px;
     }
 
-    #about-c-text {
+    &-text {
       justify-content: flex-end;
       align-items: center;
       width: 80%;
@@ -588,7 +591,7 @@
       }
     }
 
-    #about-c-pic {
+    &-pic {
       background-size: cover;
       background-position-y: bottom;
       position: absolute;
@@ -601,7 +604,7 @@
     text-align: center;
     margin-bottom: 120px;
 
-    #about-d-locations {
+    &-locations {
       flex-direction: column;
       align-items: center;
 
@@ -620,7 +623,7 @@
     margin-bottom: 80px;
     height: 400px;
 
-    #plan-a-content {
+    &-content {
       width: 80%;
       margin-left: 2rem;
 
@@ -656,7 +659,7 @@
   }
 
   #plan-c {
-    #plan-c-main {
+    &-main {
       text-align: center;
 
       h1 {
@@ -668,7 +671,7 @@
         margin-left: 0;
       }
 
-      #plan-c-summary {
+      &-summary {
         p {
           margin: 0 0 20px 0;
         }

@@ -153,6 +153,9 @@ i {
 .hide {
   display: none; }
 
+.spin {
+  transform: rotate(180deg); }
+
 .li-num {
   margin-right: 10px;
   color: #83888f;
@@ -268,12 +271,12 @@ header {
   display: flex;
   align-items: center;
   margin-bottom: 135px; }
-  #home-a #home-a-content {
+  #home-a-content {
     width: 40%;
     margin-left: 6rem; }
-    #home-a #home-a-content h1 {
+    #home-a-content h1 {
       padding-bottom: 40px; }
-    #home-a #home-a-content p {
+    #home-a-content p {
       padding-bottom: 40px; }
 
 #home-b {
@@ -290,27 +293,29 @@ header {
       font-family: "Fraunces", serif;
       font-size: 150px;
       line-height: 120px;
+      background: -webkit-linear-gradient(to bottom, #83888f 0%, #fefcf7 100%);
+      background: -moz-linear-gradient(to bottom, #83888f 0%, #fefcf7 100%);
       background: linear-gradient(to bottom, #333d4b 0%, #fefcf7 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
-  #home-b #home-b-content {
+  #home-b-content {
     z-index: 1;
     margin-top: 80px;
     display: flex;
     justify-content: space-between; }
-    #home-b #home-b-content img {
+    #home-b-content img {
       width: 80%;
       margin-bottom: 30px; }
-    #home-b #home-b-content h2 {
+    #home-b-content h2 {
       margin-bottom: 20px; }
-    #home-b #home-b-content p {
+    #home-b-content p {
       text-align: center;
       color: #333d4b; }
 
 #home-c {
   height: 700px;
   margin-bottom: 175px; }
-  #home-c #home-c-bg {
+  #home-c-bg {
     position: absolute;
     height: 575px;
     width: 100%;
@@ -318,7 +323,7 @@ header {
     background: #2c343e;
     border-radius: 10px;
     z-index: -1; }
-  #home-c #home-c-title {
+  #home-c-title {
     height: 50%;
     width: 40%;
     margin: auto;
@@ -326,21 +331,21 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center; }
-    #home-c #home-c-title h2 {
+    #home-c-title h2 {
       color: #fefcf7;
       margin-bottom: 20px; }
-    #home-c #home-c-title p {
+    #home-c-title p {
       text-align: center; }
-  #home-c #home-c-cards {
+  #home-c-cards {
     display: flex;
     width: 95%;
     margin: auto;
     justify-content: space-evenly; }
-    #home-c #home-c-cards img {
+    #home-c-cards img {
       padding: 20px; }
-    #home-c #home-c-cards h3 {
+    #home-c-cards h3 {
       color: #fefcf7; }
-    #home-c #home-c-cards p {
+    #home-c-cards p {
       text-align: center;
       width: 80%; }
 
@@ -372,7 +377,7 @@ header {
 #home-e {
   width: 89%;
   margin: auto;
-  margin-bottom: 200px; }
+  margin-bottom: 150px; }
 
 #about-a {
   background-image: url(/dist/images/about/desktop/image-hero-whitecup.jpg);
@@ -381,12 +386,12 @@ header {
   display: flex;
   align-items: center;
   margin-bottom: 175px; }
-  #about-a #about-a-content {
+  #about-a-content {
     width: 40%;
     margin-left: 6rem; }
-    #about-a #about-a-content h1 {
+    #about-a-content h1 {
       padding-bottom: 40px; }
-    #about-a #about-a-content p {
+    #about-a-content p {
       padding-bottom: 40px; }
 
 #about-b {
@@ -396,17 +401,17 @@ header {
   width: 90%;
   margin: auto;
   margin-bottom: 175px; }
-  #about-b #about-b-pic {
+  #about-b-pic {
     background-image: url(/dist/images/about/desktop/image-commitment.jpg);
     height: 520px;
     width: 445px;
     border-radius: 10px; }
-  #about-b #about-b-text {
+  #about-b-text {
     width: 50%; }
-    #about-b #about-b-text h2 {
+    #about-b-text h2 {
       color: #333d4b;
       margin-bottom: 40px; }
-    #about-b #about-b-text p {
+    #about-b-text p {
       color: #333d4b; }
 
 #about-c {
@@ -415,7 +420,7 @@ header {
   justify-content: space-evenly;
   margin-bottom: 175px;
   height: 575px; }
-  #about-c #about-c-bg {
+  #about-c-bg {
     position: absolute;
     height: 475px;
     width: 100%;
@@ -424,15 +429,15 @@ header {
     border-radius: 10px;
     z-index: -1;
     top: 100px; }
-  #about-c #about-c-text {
+  #about-c-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     width: 42%; }
-    #about-c #about-c-text h2 {
+    #about-c-text h2 {
       margin-bottom: 20px; }
-  #about-c #about-c-pic {
+  #about-c-pic {
     background-image: url(/dist/images/about/desktop/image-quality.jpg);
     height: 474px;
     width: 445px;
@@ -445,13 +450,13 @@ header {
   #about-d h3 {
     color: #83888f;
     margin-bottom: 75px; }
-  #about-d #about-d-locations {
+  #about-d-locations {
     display: flex;
     margin: auto; }
-    #about-d #about-d-locations h3 {
+    #about-d-locations h3 {
       color: #333d4b;
       margin-bottom: 0; }
-    #about-d #about-d-locations p {
+    #about-d-locations p {
       color: #333d4b; }
 
 #plan-a {
@@ -461,12 +466,12 @@ header {
   display: flex;
   align-items: center;
   margin-bottom: 175px; }
-  #plan-a #plan-a-content {
+  #plan-a-content {
     width: 40%;
     margin-left: 6rem; }
-    #plan-a #plan-a-content h1 {
+    #plan-a-content h1 {
       padding-bottom: 40px; }
-    #plan-a #plan-a-content p {
+    #plan-a-content p {
       padding-bottom: 40px; }
 
 #plan-b {
@@ -497,38 +502,38 @@ header {
   display: flex;
   width: 90%;
   margin: auto; }
-  #plan-c #plan-c-side-bar {
+  #plan-c-side-bar {
     width: 350px;
     margin-right: 125px; }
-    #plan-c #plan-c-side-bar li {
+    #plan-c-side-bar li {
       padding-bottom: 10px;
       border-bottom: 1px solid #83888f;
       margin-bottom: 10px; }
-    #plan-c #plan-c-side-bar :last-child {
+    #plan-c-side-bar :last-child {
       border-bottom: none; }
-  #plan-c #plan-c-main h1 {
+  #plan-c-main h1 {
     color: #83888f; }
-  #plan-c #plan-c-main h3 {
+  #plan-c-main h3 {
     color: #333d4b;
     margin-bottom: 20px; }
-  #plan-c #plan-c-main p {
+  #plan-c-main p {
     color: #333d4b; }
-  #plan-c #plan-c-main #plan-c-summary {
+  #plan-c-main #plan-c-summary {
     width: 750px;
     background: #333d4b;
     margin-top: 125px;
     border-radius: 8px;
     padding: 30px 0;
     margin-bottom: 50px; }
-    #plan-c #plan-c-main #plan-c-summary p {
+    #plan-c-main #plan-c-summary p {
       color: #83888f;
       margin: 0 0 20px 40px; }
-    #plan-c #plan-c-main #plan-c-summary h3 {
+    #plan-c-main #plan-c-summary h3 {
       color: #ffffff;
       margin: 0 40px 0 40px; }
-    #plan-c #plan-c-main #plan-c-summary span {
+    #plan-c-main #plan-c-summary span {
       color: #0e8784; }
-  #plan-c #plan-c-main #create-plan-btn {
+  #plan-c-main #create-plan-btn {
     float: right;
     margin-bottom: 175px; }
 
@@ -591,10 +596,10 @@ footer {
     background-size: cover;
     background-position: center;
     height: 500px; }
-    #home-a #home-a-content {
+    #home-a-content {
       width: 60%;
       margin-left: 4rem; }
-      #home-a #home-a-content h1 {
+      #home-a-content h1 {
         font-size: 48px;
         line-height: 48px; }
   #home-b {
@@ -602,19 +607,19 @@ footer {
     #home-b #our-coll-container h1 {
       font-size: 100px;
       line-height: 80px; }
-    #home-b #home-b-content {
+    #home-b-content {
       margin-top: 50px;
       flex-direction: column; }
-      #home-b #home-b-content p {
+      #home-b-content p {
         text-align: left; }
   #home-c {
     margin-bottom: 300px; }
-    #home-c #home-c-bg {
+    #home-c-bg {
       width: 94%; }
-    #home-c #home-c-title {
+    #home-c-title {
       width: 80%;
       height: 37%; }
-    #home-c #home-c-cards {
+    #home-c-cards {
       flex-direction: column;
       align-items: center; }
   #home-d h3 {
@@ -630,28 +635,28 @@ footer {
     #about-a h1 {
       font-size: 32px;
       line-height: 40px; }
-  #about-b #about-b-pic {
+  #about-b-pic {
     width: 280px;
     height: 470px; }
-  #about-b #about-b-text {
+  #about-b-text {
     width: 52%; }
-    #about-b #about-b-text h2 {
+    #about-b-text h2 {
       font-size: 36px;
       margin-bottom: 20px; }
-  #about-c #about-c-bg {
+  #about-c-bg {
     height: 488px;
     width: 688px;
     top: 170px; }
-  #about-c #about-c-text {
+  #about-c-text {
     justify-content: flex-end;
     align-items: center;
     width: 80%; }
-    #about-c #about-c-text h2 {
+    #about-c-text h2 {
       font-size: 32px;
       line-height: 48px; }
-    #about-c #about-c-text p {
+    #about-c-text p {
       text-align: center; }
-  #about-c #about-c-pic {
+  #about-c-pic {
     background-size: cover;
     background-position-y: bottom;
     position: absolute;
@@ -660,7 +665,7 @@ footer {
   #plan-a {
     background-position: 30%;
     margin-bottom: 140px; }
-    #plan-a #plan-a-content {
+    #plan-a-content {
       width: 45%;
       margin-left: 4rem; }
     #plan-a h1 {
@@ -675,11 +680,11 @@ footer {
   #plan-c {
     display: inline;
     width: 100%; }
-    #plan-c #plan-c-side-bar {
+    #plan-c-side-bar {
       display: none; }
-    #plan-c #plan-c-main #plan-c-summary {
+    #plan-c-main #plan-c-summary {
       width: 100%; }
-    #plan-c #plan-c-main #create-plan-btn {
+    #plan-c-main #create-plan-btn {
       float: none;
       margin-bottom: 100px;
       margin-left: 35%; }
@@ -808,10 +813,10 @@ footer {
     height: 500px;
     text-align: center;
     margin-bottom: 80px; }
-    #home-a #home-a-content {
+    #home-a-content {
       width: 80%;
       margin-left: 2rem; }
-      #home-a #home-a-content h1 {
+      #home-a-content h1 {
         font-size: 38px;
         line-height: 40px;
         padding-bottom: 20px; }
@@ -820,30 +825,30 @@ footer {
     #home-b #our-coll-container h1 {
       font-size: 40px;
       line-height: 40px; }
-    #home-b #home-b-content {
+    #home-b-content {
       margin-top: 80px;
       flex-direction: column; }
-      #home-b #home-b-content img {
+      #home-b-content img {
         margin-bottom: 20px; }
-      #home-b #home-b-content h3 {
+      #home-b-content h3 {
         margin-bottom: 20px; }
-      #home-b #home-b-content p {
+      #home-b-content p {
         text-align: center;
         margin-bottom: 40px; }
   #home-c {
     height: 900px;
     margin-bottom: 700px; }
-    #home-c #home-c-bg {
+    #home-c-bg {
       width: 88%;
       height: 900px; }
-    #home-c #home-c-title {
+    #home-c-title {
       height: 30%; }
-      #home-c #home-c-title h2 {
+      #home-c-title h2 {
         font-size: 28px;
         line-height: 28px; }
-      #home-c #home-c-title p {
+      #home-c-title p {
         line-height: 22px; }
-    #home-c #home-c-cards {
+    #home-c-cards {
       flex-direction: column;
       align-items: center; }
   #home-d {
@@ -866,10 +871,10 @@ footer {
     background-position: 55%;
     text-align: center;
     margin-bottom: 80px; }
-    #about-a #about-a-content {
+    #about-a-content {
       width: 80%;
       margin-left: 2rem; }
-      #about-a #about-a-content h1 {
+      #about-a-content h1 {
         font-size: 38px;
         line-height: 40px;
         padding-bottom: 20px; }
@@ -877,33 +882,33 @@ footer {
     display: flex;
     flex-direction: column;
     margin-bottom: 120px; }
-    #about-b #about-b-pic {
+    #about-b-pic {
       width: 327px;
       height: 400px;
       margin-bottom: 40px; }
-    #about-b #about-b-text {
+    #about-b-text {
       width: 100%;
       text-align: center; }
-      #about-b #about-b-text h2 {
+      #about-b-text h2 {
         font-size: 32px; }
   #about-c {
     margin-bottom: 120px; }
-    #about-c #about-c-bg {
+    #about-c-bg {
       height: 509px;
       width: 327px;
       top: 70px; }
-    #about-c #about-c-text {
+    #about-c-text {
       justify-content: flex-end;
       align-items: center;
       width: 80%;
       padding-bottom: 40px; }
-      #about-c #about-c-text h2 {
+      #about-c-text h2 {
         font-size: 28px;
         line-height: 28px;
         text-align: center; }
-      #about-c #about-c-text p {
+      #about-c-text p {
         text-align: center; }
-    #about-c #about-c-pic {
+    #about-c-pic {
       background-size: cover;
       background-position-y: bottom;
       position: absolute;
@@ -912,10 +917,10 @@ footer {
   #about-d {
     text-align: center;
     margin-bottom: 120px; }
-    #about-d #about-d-locations {
+    #about-d-locations {
       flex-direction: column;
       align-items: center; }
-      #about-d #about-d-locations h3 {
+      #about-d-locations h3 {
         margin-top: 40px; }
   #plan-a {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/dist/images/plan/desktop/image-hero-blackcup.jpg) no-repeat center/cover;
@@ -923,10 +928,10 @@ footer {
     text-align: center;
     margin-bottom: 80px;
     height: 400px; }
-    #plan-a #plan-a-content {
+    #plan-a-content {
       width: 80%;
       margin-left: 2rem; }
-      #plan-a #plan-a-content h1 {
+      #plan-a-content h1 {
         font-size: 38px;
         line-height: 40px;
         padding-bottom: 20px; }
@@ -943,14 +948,14 @@ footer {
       #plan-b #plan-steps p {
         width: 90%;
         margin: auto; }
-  #plan-c #plan-c-main {
+  #plan-c-main {
     text-align: center; }
-    #plan-c #plan-c-main h1 {
+    #plan-c-main h1 {
       font-size: 24px;
       line-height: 28px; }
-    #plan-c #plan-c-main #create-plan-btn {
+    #plan-c-main #create-plan-btn {
       margin-left: 0; }
-    #plan-c #plan-c-main #plan-c-summary p {
+    #plan-c-main-summary p {
       margin: 0 0 20px 0; }
   #plan-c #my-modal h1 {
     font-size: 28px; }

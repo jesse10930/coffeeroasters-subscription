@@ -198,6 +198,10 @@ i {
   display: none;
 }
 
+.spin {
+  transform: rotate(180deg);
+}
+
 // Plan Side Bar
 .li-num {
   margin-right: 10px;

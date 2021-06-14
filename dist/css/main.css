@@ -265,7 +265,7 @@ header {
     padding: 2rem 0 2rem 1.5rem; }
 
 #home-a {
-  background-image: url(/dist/images/hero-coffeepress.jpg);
+  background-image: url(/dist/images/home/desktop/image-hero-coffeepress.jpg);
   height: 600px;
   border-radius: 10px;
   display: flex;
@@ -380,7 +380,7 @@ header {
   margin-bottom: 150px; }
 
 #about-a {
-  background-image: url(/dist/images/hero-whitecup.jpg);
+  background-image: url(/dist/images/about/desktop/image-hero-blackcup.jpg);
   height: 450px;
   border-radius: 10px;
   display: flex;
@@ -402,7 +402,7 @@ header {
   margin: auto;
   margin-bottom: 175px; }
   #about-b-pic {
-    background-image: url(/dist/images/commitment.jpg);
+    background-image: url(/dist/images/about/desktop/image-commitment.jpg);
     height: 520px;
     width: 445px;
     border-radius: 10px; }
@@ -438,7 +438,7 @@ header {
     #about-c-text h2 {
       margin-bottom: 20px; }
   #about-c-pic {
-    background-image: url(/dist/images/quality.jpg);
+    background-image: url(/dist/images/about/desktop/image-quality.jpg);
     height: 474px;
     width: 445px;
     border-radius: 10px; }
@@ -460,7 +460,7 @@ header {
       color: #333d4b; }
 
 #plan-a {
-  background-image: url(/dist/images/hero-blackcup.jpg);
+  background-image: url(/dist/images/plan/desktop/image-hero-whitecup.jpg);
   height: 450px;
   border-radius: 10px;
   display: flex;

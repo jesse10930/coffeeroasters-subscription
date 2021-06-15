@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: []()
-- Live Site URL: []()
+- Solution URL: [https://www.frontendmentor.io/solutions/3-page-website-html5-semantics-css3-and-sass-javascript-5Sz3eQXSy](https://www.frontendmentor.io/solutions/3-page-website-html5-semantics-css3-and-sass-javascript-5Sz3eQXSy)
+- Live Site URL: [https://boring-heyrovsky-567be8.netlify.app/](https://boring-heyrovsky-567be8.netlify.app/)
 
 ## My process
 

@@ -420,7 +420,7 @@
 
   #home-a {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url(/dist/images/home/desktop/image-hero-coffeepress.jpg) no-repeat center /
+      url(/images/home/desktop/image-hero-coffeepress.jpg) no-repeat center /
         cover;
     background-position: 65%;
     height: 500px;
@@ -527,7 +527,7 @@
 
   #about-a {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url(/dist/images/about/desktop/image-hero-whitecup.jpg) no-repeat center /
+      url(/images/about/desktop/image-hero-whitecup.jpg) no-repeat center /
         cover;
     background-position: 55%;
     text-align: center;
@@ -616,8 +616,7 @@
 
   #plan-a {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url(/dist/images/plan/desktop/image-hero-blackcup.jpg) no-repeat center /
-        cover;
+      url(/images/plan/desktop/image-hero-blackcup.jpg) no-repeat center / cover;
     background-position: 55%;
     text-align: center;
     margin-bottom: 80px;
@@ -659,8 +658,14 @@
   }
 
   #plan-c {
-    &-main {
+    #plan-c-main {
       text-align: center;
+
+      #plan-c-summary {
+        p {
+          margin: 0 0 20px 0;
+        }
+      }
 
       h1 {
         font-size: 24px;
@@ -669,12 +674,6 @@
 
       #create-plan-btn {
         margin-left: 0;
-      }
-
-      &-summary {
-        p {
-          margin: 0 0 20px 0;
-        }
       }
     }
 

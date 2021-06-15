@@ -548,6 +548,15 @@ footer {
       padding: 2rem 0 2rem 1.5rem; }
       footer #footer-left li a:hover {
         color: #ffffff; }
+  footer #footer-right {
+    width: 12rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    footer #footer-right img {
+      margin-top: 1px;
+      height: 30px;
+      width: 30px; }
 
 @media (max-width: 900px) {
   .left {
@@ -795,7 +804,7 @@ footer {
     header #header-list {
       display: none; }
   #home-a {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/dist/images/home/desktop/image-hero-coffeepress.jpg) no-repeat center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/home/desktop/image-hero-coffeepress.jpg) no-repeat center/cover;
     background-position: 65%;
     height: 500px;
     text-align: center;
@@ -854,7 +863,7 @@ footer {
   #home-e {
     text-align: center; }
   #about-a {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/dist/images/about/desktop/image-hero-whitecup.jpg) no-repeat center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/about/desktop/image-hero-whitecup.jpg) no-repeat center/cover;
     background-position: 55%;
     text-align: center;
     margin-bottom: 80px; }
@@ -910,7 +919,7 @@ footer {
       #about-d-locations h3 {
         margin-top: 40px; }
   #plan-a {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/dist/images/plan/desktop/image-hero-blackcup.jpg) no-repeat center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/plan/desktop/image-hero-blackcup.jpg) no-repeat center/cover;
     background-position: 55%;
     text-align: center;
     margin-bottom: 80px;

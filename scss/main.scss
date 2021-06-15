@@ -42,7 +42,7 @@ header {
 
 // Home
 #home-a {
-  background-image: url(/images/home/desktop/image-hero-coffeepress.jpg);
+  // background-image: url(/images/home/desktop/image-hero-coffeepress.jpg);
   height: 600px;
   border-radius: 10px;
   display: flex;
@@ -208,7 +208,7 @@ header {
 
 // About
 #about-a {
-  background-image: url(/images/about/desktop/image-hero-blackcup.jpg);
+  // background-image: url(/images/about/desktop/image-hero-blackcup.jpg);
   height: 450px;
   border-radius: 10px;
   display: flex;
@@ -238,7 +238,7 @@ header {
   margin-bottom: 175px;
 
   &-pic {
-    background-image: url(/images/about/desktop/image-commitment.jpg);
+    // background-image: url(/images/about/desktop/image-commitment.jpg);
     height: 520px;
     width: 445px;
     border-radius: 10px;
@@ -289,7 +289,7 @@ header {
   }
 
   &-pic {
-    background-image: url(/images/about/desktop/image-quality.jpg);
+    // background-image: url(/images/about/desktop/image-quality.jpg);
     height: 474px;
     width: 445px;
     border-radius: 10px;
@@ -323,7 +323,7 @@ header {
 
 // Plan
 #plan-a {
-  background-image: url(/images/plan/desktop/image-hero-whitecup.jpg);
+  // background-image: url(/images/plan/desktop/image-hero-whitecup.jpg);
   height: 450px;
   border-radius: 10px;
   display: flex;
@@ -461,6 +461,19 @@ footer {
       a:hover {
         color: #ffffff;
       }
+    }
+  }
+
+  #footer-right {
+    width: 12rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+      margin-top: 1px;
+      height: 30px;
+      width: 30px;
     }
   }
 }
